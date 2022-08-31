@@ -33,4 +33,16 @@ document.getElementById('btn-search').addEventListener('click', function () {
     loadphones(searchText);
 })
 
-loadphones();
+
+// toggle spinners
+const toggleSpinner = isLoading => {
+    const loaderSection = document.getElementById('loader');
+    if (isLoading) {
+        loaderSection.classList.remove('d-none')
+    }
+    else {
+        loaderSection.classList.add('d-none');
+    }
+}
+
+// loadphones();
